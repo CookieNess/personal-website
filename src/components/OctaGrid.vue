@@ -1,12 +1,13 @@
 <template>
   <div class="octagon-grid">
-    <div v-for="row in rows" :key="row" class="octagon-row">
+    <div v-for="(row, rowIndex) in rows" :key="rowIndex" class="octagon-row">
       <div
-        v-for="col in columns"
-        :key="col"
+        v-for="(col, colIndex) in columns"
+        :key="colIndex"
+        :class="{ 'octagon-activated': isActivated(rowIndex, colIndex) }"
+        :id="'octagon-' + getOctagonId(rowIndex, colIndex)"
+        :style="{ 'background-color': getOctagonColor(rowIndex, colIndex) }"
         class="octagon"
-        :id="'octagon-' + dynamicId[counter]"
-        :class="{ 'octagon-activated': isActive(dynamicId[row * col]) }"
       ></div>
     </div>
   </div>
@@ -17,51 +18,44 @@ export default {
   data() {
     return {
       rows: 5,
-      columns: 10,
+      columns: 5,
       activatedOctagons: [],
-      counter: 0,
     };
   },
-  computed: {
-    dynamicId() {
-      return this.columns > 0
-        ? Array.from(
-            { length: this.row * (this.columns + 1) },
-            (_, index) => index
-          )
-        : [];
-    },
-  },
   methods: {
-    isActive(index) {
-      return this.activatedOctagons.includes(index);
+    getOctagonId(rowIndex, colIndex) {
+      return rowIndex * this.columns + colIndex + 1;
     },
-    activateOctagons() {
-      this.activatedOctagons = [];
-      const totalOctagons = this.rows * (this.columns + 1);
-      const randomIndexes = [];
-      while (randomIndexes.length < 10) {
-        const randomIndex = Math.floor(Math.random() * totalOctagons);
-        if (!randomIndexes.includes(randomIndex)) {
-          randomIndexes.push(randomIndex);
-        }
+    getOctagonColor(rowIndex, colIndex) {
+      const octagonId = this.getOctagonId(rowIndex, colIndex);
+      const isActivated = this.activatedOctagons.includes(octagonId);
+
+      if (isActivated) {
+        return Math.random() < 0.5 ? "orange" : "purple";
       }
-      console.log(randomIndexes);
-      randomIndexes.forEach((index, i) => {
-        this.activatedOctagons.push(index);
-        // setTimeout(() => {
-        //   setTimeout(() => {
-        //     this.activatedOctagons.splice(
-        //       this.activatedOctagons.indexOf(index),
-        //       1
-        //     );
-        //   }, 2000);
-        // }, i * 2000);
-      });
+    },
+    isActivated(rowIndex, colIndex) {
+      const octagonId = this.getOctagonId(rowIndex, colIndex);
+      return this.activatedOctagons.includes(octagonId);
+    },
+    activateRandomOctagons() {
+      const totalOctagons = this.rows * this.columns;
+      const randomIndices = [];
+
+      setInterval(() => {
+        if (randomIndices.length === 10) {
+          return;
+        }
+        const randomIndex = Math.floor(Math.random() * totalOctagons);
+        if (!randomIndices.includes(randomIndex)) {
+          randomIndices.push(randomIndex);
+          this.activatedOctagons.push(randomIndex + 1);
+        }
+      }, 200);
     },
   },
-  mounted() {
-    this.activateOctagons();
+  created() {
+    this.activateRandomOctagons();
   },
 };
 </script>
@@ -82,16 +76,28 @@ export default {
 }
 
 .octagon-activated {
-  background-color: orange !important;
   filter: blur(40px) !important;
+  animation: fade 2s forwards;
 }
 
 .octagon {
   width: 100px;
   height: 100px;
   margin: 7px;
-  background-color: grey;
+  background-color: black;
   filter: blur(100px);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>
