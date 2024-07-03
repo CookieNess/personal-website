@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <OctaGrid />
+    <CookieAnimation />
   </div>
 </template>
 
 <script>
-import OctaGrid from "./components/OctaGrid.vue";
+import CookieAnimation from "./components/CookieAnimation.vue";
 export default {
   name: "app",
   components: {
-    OctaGrid,
+    CookieAnimation,
   },
 };
 </script>
