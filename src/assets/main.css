@@ -59,6 +59,13 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
 ::selection {
   background: var(--color-mauve);
   color: var(--color-base);

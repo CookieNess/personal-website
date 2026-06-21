@@ -33,7 +33,7 @@
         </h1>
 
         <p class="text-subtext1 mb-2" style="font-size: clamp(1.1rem, 2.5vw, 1.6rem); font-weight: 300;">
-          Most people hand off.
+          Most people hand off a project.
         </p>
         <p class="text-mauve font-semibold mb-10" style="font-size: clamp(1.1rem, 2.5vw, 1.6rem);">
           I don't.
@@ -61,7 +61,7 @@
       </div>
     </section>
 
-    <PlaceholderSection section-id="about"        title="About"             :dark="true"  />
+    <AboutSection />
     <PlaceholderSection section-id="work"         title="Work History"      :dark="false" />
     <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
     <PlaceholderSection section-id="projects"     title="Work I'm proud of" :dark="false" />
@@ -73,4 +73,5 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue'
 import PlaceholderSection from '@/components/PlaceholderSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
 </script>
