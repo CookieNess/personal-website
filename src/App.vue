@@ -28,8 +28,8 @@
         </p>
 
         <h1 class="font-display font-extrabold text-text leading-none mb-6"
-            style="font-size: clamp(4rem, 12vw, 9rem); letter-spacing: -0.03em;">
-          Frederik<span class="text-mauve">.</span>
+            style="font-size: clamp(3rem, 10vw, 6rem); letter-spacing: -0.03em;">
+          Frederik Kjærgaard<span class="text-mauve">.</span>
         </h1>
 
         <p class="text-subtext1 mb-2" style="font-size: clamp(1.1rem, 2.5vw, 1.6rem); font-weight: 300;">

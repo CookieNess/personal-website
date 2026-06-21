@@ -5,9 +5,8 @@
   >
     <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
-      <!-- Logo / name -->
-      <a href="#" class="font-display font-bold text-text text-lg tracking-tight hover:text-mauve transition-colors">
-        Frederik<span class="text-mauve">.</span>
+      <a href="#" class="flex items-center">
+        <img :src="monogram" alt="Frederik Kjærgaard" class="h-9 w-auto" />
       </a>
 
       <!-- Desktop links -->
@@ -73,6 +72,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import monogram from '@/assets/brand/monogram.png'
 
 interface NavLink {
   href: string
