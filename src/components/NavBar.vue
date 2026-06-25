@@ -70,8 +70,8 @@
   </header>
 </template>
 
-<script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+<script lang="ts">
+import { defineComponent } from 'vue'
 import monogram from '@/assets/brand/monogram.png'
 
 interface NavLink {
@@ -79,22 +79,36 @@ interface NavLink {
   label: string
 }
 
-const navLinks: NavLink[] = [
-  { href: '#about',         label: 'About' },
-  { href: '#work',          label: 'Work history' },
-  { href: '#technologies',  label: 'Tech' },
-  { href: '#projects',      label: 'Projects' },
-  { href: '#testimonials',  label: 'Testimonials' },
-  { href: '#contact',       label: 'Contact' },
-]
+export default defineComponent({
+  data() {
+    return {
+      monogram,
+      scrolled: false,
+      menuOpen: false,
+      navLinks: [
+        { href: '#about', label: 'About' },
+        { href: '#work', label: 'Work history' },
+        { href: '#technologies', label: 'Tech' },
+        { href: '#projects', label: 'Projects' },
+        { href: '#testimonials', label: 'Testimonials' },
+        { href: '#contact', label: 'Contact' },
+      ] as NavLink[],
+    }
+  },
 
-const scrolled = ref(false)
-const menuOpen = ref(false)
+  mounted() {
+    window.addEventListener('scroll', this.onScroll, { passive: true })
+    this.onScroll()
+  },
 
-function onScroll() {
-  scrolled.value = window.scrollY > 24
-}
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
 
-onMounted(() => window.addEventListener('scroll', onScroll, { passive: true }))
-onUnmounted(() => window.removeEventListener('scroll', onScroll))
+  methods: {
+    onScroll() {
+      this.scrolled = window.scrollY > 24
+    },
+  },
+})
 </script>

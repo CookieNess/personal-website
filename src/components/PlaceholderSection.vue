@@ -11,10 +11,23 @@
   </section>
 </template>
 
-<script setup lang="ts">
-defineProps<{
-  sectionId: string
-  title: string
-  dark?: boolean
-}>()
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  props: {
+    sectionId: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    dark: {
+      type: Boolean,
+      default: false,
+    },
+  },
+})
 </script>

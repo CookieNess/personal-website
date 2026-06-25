@@ -24,7 +24,7 @@
 
         <div class="order-1 md:order-2">
           <div class="aspect-[4/5] rounded-2xl bg-surface0 border border-surface1 flex items-center justify-center overflow-hidden">
-            <span class="label text-overlay0">Photo placeholder</span>
+            <img src="@/assets/images/main.png" alt="Frederik Kjærgaard" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -83,9 +83,11 @@
       </div>
 
       <div class="mt-20 flex flex-col sm:flex-row gap-6 items-center border-t border-surface1 pt-12">
-        <div class="w-20 h-20 rounded-xl bg-surface0 border border-surface1 flex items-center justify-center shrink-0 overflow-hidden">
-          <span class="label text-overlay0 text-center px-1" style="font-size: 0.55rem;">Photo placeholder</span>
-        </div>
+        <button @click="lightboxOpen = true" class="shrink-0">
+          <div class="w-20 h-20 rounded-xl overflow-hidden border border-surface1 hover:border-mauve transition-colors cursor-zoom-in">
+            <img src="@/assets/images/dance.jpg" alt="Me at the European Championships" class="w-full h-full object-cover" />
+          </div>
+        </button>
         <p class="text-subtext0 text-sm leading-relaxed">
           Lorem ipsum dolor sit amet — before integrations, it was choreography.
           Consectetur adipiscing elit, competed at the World Championships as a
@@ -95,26 +97,44 @@
 
     </div>
   </section>
+
+  <Transition
+    enter-active-class="transition-opacity duration-200"
+    enter-from-class="opacity-0"
+    enter-to-class="opacity-100"
+  >
+    <div v-if="lightboxOpen" @click="lightboxOpen = false" class="fixed inset-0 z-50 bg-crust/90 backdrop-blur-sm flex items-center justify-center cursor-zoom-out p-8">
+      <img src="@/assets/images/dance.jpg" alt="Me at the European Championships" class="max-w-full max-h-full rounded-2xl object-contain shadow-2xl" />
+    </div>
+  </Transition>
 </template>
 
-<script setup lang="ts">
-const systemTags = [
-  'REST & GraphQL APIs',
-  'Microservices vs. monolith',
-  'Webhooks & event-driven design',
-  'OAuth2 & auth flows',
-  'Vue & TypeScript',
-  'Relational data modelling',
-]
+<script lang="ts">
+import { defineComponent } from 'vue'
 
-const businessTags = [
-  'HubSpot',
-  'Intercom',
-  'Make.com',
-  'Stakeholder workshops',
-  'Requirements gathering',
-  'Customer onboarding',
-]
+export default defineComponent({
+  data() {
+    return {
+      lightboxOpen: false,
+      systemTags: [
+        'REST & GraphQL APIs',
+        'Microservices vs. monolith',
+        'Webhooks & event-driven design',
+        'OAuth2 & auth flows',
+        'Vue & TypeScript',
+        'Relational data modelling',
+      ],
+      businessTags: [
+        'HubSpot',
+        'Intercom',
+        'Make.com',
+        'Stakeholder workshops',
+        'Requirements gathering',
+        'Customer onboarding',
+      ],
+    }
+  },
+})
 </script>
 
 <style scoped>
