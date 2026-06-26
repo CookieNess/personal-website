@@ -24,7 +24,7 @@
 
         <div class="order-1 md:order-2">
           <div class="aspect-[4/5] rounded-2xl bg-surface0 border border-surface1 flex items-center justify-center overflow-hidden">
-            <img src="@/assets/images/main.png" alt="Frederik Kjærgaard" class="w-full h-full object-cover" />
+            <img src="@/assets/images/main.png" alt="Me celebrating after I finished my masters degree" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>

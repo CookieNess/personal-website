@@ -62,7 +62,7 @@
     </section>
 
     <AboutSection />
-    <PlaceholderSection section-id="work"         title="Work History"      :dark="false" />
+    <WorkHistory />
     <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
     <PlaceholderSection section-id="projects"     title="Work I'm proud of" :dark="false" />
     <PlaceholderSection section-id="testimonials" title="Testimonials"      :dark="true"  />
@@ -76,12 +76,14 @@ import { defineComponent } from 'vue'
 import NavBar from '@/components/NavBar.vue'
 import PlaceholderSection from '@/components/PlaceholderSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
+import WorkHistory from '@/components/WorkHistory.vue'
 
 export default defineComponent({
   components: {
     NavBar,
     PlaceholderSection,
     AboutSection,
+    WorkHistory,
   },
 })
 </script>
