@@ -90,7 +90,7 @@ export default defineComponent({
         { href: '#work', label: 'Work history' },
         { href: '#technologies', label: 'Tech' },
         { href: '#projects', label: 'Projects' },
-        { href: '#testimonials', label: 'Testimonials' },
+        { href: '#inTheirWords', label: 'In Their Words' },
         { href: '#contact', label: 'Contact' },
       ] as NavLink[],
     }

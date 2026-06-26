@@ -36,7 +36,7 @@
                   <p class="label text-overlay1 mb-2">{{ role.period }}</p>
                 </div>
               </div>
-            </div>should 
+            </div>
 
             <div :class="index % 2 === 0 ? 'md:pl-12' : 'md:order-1 md:pr-12'">
               <div class="rounded-2xl bg-surface0 border border-surface1 p-6">

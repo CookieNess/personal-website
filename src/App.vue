@@ -65,7 +65,7 @@
     <WorkHistory />
     <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
     <PlaceholderSection section-id="projects"     title="Work I'm proud of" :dark="false" />
-    <PlaceholderSection section-id="testimonials" title="Testimonials"      :dark="true"  />
+    <InTheirWords />
     <PlaceholderSection section-id="contact"      title="Contact"           :dark="false" />
   </div>
 </template>
@@ -77,6 +77,7 @@ import NavBar from '@/components/NavBar.vue'
 import PlaceholderSection from '@/components/PlaceholderSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import WorkHistory from '@/components/WorkHistory.vue'
+import InTheirWords from './components/InTheirWords.vue'
 
 export default defineComponent({
   components: {
@@ -84,6 +85,7 @@ export default defineComponent({
     PlaceholderSection,
     AboutSection,
     WorkHistory,
+    InTheirWords,
   },
 })
 </script>
