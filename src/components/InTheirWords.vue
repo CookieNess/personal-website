@@ -14,7 +14,7 @@
 
       <div class="rounded-2xl bg-surface0 border border-surface1 p-8 md:p-12 mb-6">
         <div class="flex items-center gap-3 mb-10">
-          <span class="font-display text-lg font-semibold text-text">A real example</span>
+          <span class="font-display text-lg font-semibold text-text">A real example from a customer</span>
           <div class="h-px flex-1 bg-surface1"></div>
         </div>
 

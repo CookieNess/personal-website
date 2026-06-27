@@ -5,7 +5,7 @@
       <p class="label text-mauve mb-4">Work History</p>
       <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-6 leading-tight">
         Where I've been,<br />
-        <span class="text-mauve">and what I built there.</span>
+        <span class="text-mauve">and what I built.</span>
       </h2>
       <p class="text-subtext0 leading-relaxed mb-24 max-w-xl">
         Every role shaped how I work today — from early freelance projects to owning
@@ -92,7 +92,7 @@ export default defineComponent({
           company: 'Axion',
           url: 'https://axion.io',
           roles: [
-            { title: 'Technical Lead — Master Thesis', period: 'Feb 2025 – Jul 2025' },
+            { title: 'Technical Lead (Master Thesis)', period: 'Feb 2025 – Jul 2025' },
           ],
           description: 'Joined the founding team of a Danish DTU startup as part of my master thesis. I led the full technical design and implementation — architecting the Android app in Kotlin, designing the cloud backend in C#/.NET on Azure, setting up the database, CI/CD pipelines, error monitoring and analytics. Defined the entire tech stack from scratch.',
           tags: ['Kotlin', 'C# / .NET', 'Azure', 'REST API', 'MySQL', 'GitHub Actions'],

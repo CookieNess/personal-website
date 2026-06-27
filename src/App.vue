@@ -66,7 +66,7 @@
     <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
     <PlaceholderSection section-id="projects"     title="Work I'm proud of" :dark="false" />
     <InTheirWords />
-    <PlaceholderSection section-id="contact"      title="Contact"           :dark="false" />
+    <Contact />
   </div>
 </template>
 
@@ -78,6 +78,7 @@ import PlaceholderSection from '@/components/PlaceholderSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import WorkHistory from '@/components/WorkHistory.vue'
 import InTheirWords from './components/InTheirWords.vue'
+import Contact from '@/components/Contact.vue'
 
 export default defineComponent({
   components: {
@@ -86,6 +87,7 @@ export default defineComponent({
     AboutSection,
     WorkHistory,
     InTheirWords,
+    Contact,
   },
 })
 </script>
