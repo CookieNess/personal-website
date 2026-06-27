@@ -64,7 +64,7 @@
     <AboutSection />
     <WorkHistory />
     <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
-    <PlaceholderSection section-id="projects"     title="Work I'm proud of" :dark="false" />
+    <WorkProud />
     <InTheirWords />
     <Contact />
   </div>
@@ -79,6 +79,7 @@ import AboutSection from '@/components/AboutSection.vue'
 import WorkHistory from '@/components/WorkHistory.vue'
 import InTheirWords from './components/InTheirWords.vue'
 import Contact from '@/components/Contact.vue'
+import WorkProud from './components/WorkProud.vue'
 
 export default defineComponent({
   components: {
@@ -88,6 +89,7 @@ export default defineComponent({
     WorkHistory,
     InTheirWords,
     Contact,
+    WorkProud,
   },
 })
 </script>
