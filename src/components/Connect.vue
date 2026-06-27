@@ -1,8 +1,8 @@
 <template>
-  <section id="contact" class="bg-base py-32 px-6">
+  <section id="connect" class="bg-base py-32 px-6">
     <div class="max-w-6xl mx-auto text-center">
 
-      <p class="label text-mauve mb-4">Contact</p>
+      <p class="label text-mauve mb-4">Connect</p>
       <h2 class="font-display text-3xl md:text-5xl font-bold text-text mb-6 leading-tight">
         Let's connect!
       </h2>

@@ -1,5 +1,5 @@
 <template>
-  <section id="testimonials" class="bg-mantle py-32 px-6">
+  <section id="in-their-words" class="bg-mantle py-32 px-6">
     <div class="max-w-6xl mx-auto">
 
       <p class="label text-mauve mb-4">In their words</p>

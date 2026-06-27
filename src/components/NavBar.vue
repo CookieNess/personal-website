@@ -88,10 +88,11 @@ export default defineComponent({
       navLinks: [
         { href: '#about', label: 'About' },
         { href: '#work', label: 'Work history' },
+        { href: '#how-i-work', label: 'How I work' },
         { href: '#technologies', label: 'Tech' },
         { href: '#projects', label: 'Projects' },
-        { href: '#inTheirWords', label: 'In Their Words' },
-        { href: '#contact', label: 'Contact' },
+        { href: '#in-their-words', label: 'In Their Words' },
+        { href: '#connect', label: 'Connect' },
       ] as NavLink[],
     }
   },
