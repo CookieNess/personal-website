@@ -2,7 +2,7 @@
   <section id="projects" class="bg-base py-32 px-6">
     <div class="max-w-6xl mx-auto">
 
-      <p class="label text-mauve mb-4">Work I'm proud of</p>
+      <p class="label text-mauve mb-4">Projects</p>
       <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-6 leading-tight">
         Things I've built<br />
         <span class="text-mauve">that actually mattered.</span>

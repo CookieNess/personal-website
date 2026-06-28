@@ -64,9 +64,8 @@
     <AboutSection />
     <WorkHistory />
     <HowIWork />
-    <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
-    <WorkProud />
     <InTheirWords />
+    <WorkProud />
     <Connect />
   </div>
 </template>
@@ -75,7 +74,6 @@
 import { defineComponent } from 'vue'
 
 import NavBar from '@/components/NavBar.vue'
-import PlaceholderSection from '@/components/PlaceholderSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import WorkHistory from '@/components/WorkHistory.vue'
 import InTheirWords from './components/InTheirWords.vue'
@@ -86,7 +84,6 @@ import HowIWork from './components/HowIWork.vue'
 export default defineComponent({
   components: {
     NavBar,
-    PlaceholderSection,
     AboutSection,
     WorkHistory,
     InTheirWords,
