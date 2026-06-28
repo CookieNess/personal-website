@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="bg-base py-32 px-6">
+  <section id="projects" class="bg-mantle py-32 px-6">
     <div class="max-w-6xl mx-auto">
 
       <p class="label text-mauve mb-4">Projects</p>
@@ -78,7 +78,7 @@
                 rel="noopener noreferrer"
                 class="label text-overlay1 hover:text-mauve transition-colors shrink-0 flex items-center gap-1"
               >
-                GitHub ↗
+                Github <Github class="w-5 h-5" />
               </a>
             </div>
             <p class="text-subtext0 text-sm leading-relaxed flex-1">{{ project.description }}</p>
@@ -95,6 +95,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { Github } from 'lucide-vue-next'
 
 interface CustomerCase {
   title: string
@@ -118,6 +119,9 @@ interface Tab {
 }
 
 export default defineComponent({
+  components: {
+    Github,
+  },
   data() {
     return {
       activeTab: 'cases',

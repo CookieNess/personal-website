@@ -54,6 +54,44 @@
         </div>
       </div>
 
+      <div class="mt-24 border-t border-surface1 pt-16">
+        <button
+          @click="systemsOpen = !systemsOpen"
+          class="flex items-center gap-4 w-full group"
+        >
+          <div class="flex-1 text-left">
+            <p class="label text-mauve mb-1">Systems I've built integrations with</p>
+            <p class="text-subtext0 text-sm">{{ systemsOpen ? 'Click to collapse' : `${totalSystems} systems across ${integrationCategories.length} categories` }}</p>
+          </div>
+          <span
+            class="text-overlay1 group-hover:text-mauve transition-all duration-200 text-xl"
+            :class="systemsOpen ? 'rotate-45' : ''"
+          >+</span>
+        </button>
+
+        <Transition
+          enter-active-class="transition-all duration-300 ease-out"
+          enter-from-class="opacity-0 -translate-y-2"
+          enter-to-class="opacity-100 translate-y-0"
+          leave-active-class="transition-all duration-200 ease-in"
+          leave-from-class="opacity-100 translate-y-0"
+          leave-to-class="opacity-0 -translate-y-2"
+        >
+          <div v-if="systemsOpen" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              v-for="category in integrationCategories"
+              :key="category.name"
+              class="rounded-2xl bg-surface0 border border-surface1 p-6"
+            >
+              <p class="label text-overlay1 mb-4">{{ category.name }}</p>
+              <div class="flex flex-wrap gap-2">
+                <span v-for="system in category.systems" :key="system" class="tag">{{ system }}</span>
+              </div>
+            </div>
+          </div>
+        </Transition>
+      </div>
+
     </div>
   </section>
 </template>
@@ -74,9 +112,16 @@ interface Job {
   tags: string[]
 }
 
+interface IntegrationCategory {
+  name: string
+  systems: string[]
+}
+
 export default defineComponent({
   data() {
     return {
+      systemsOpen: false,
+
       jobs: [
         {
           company: 'Learningbank',
@@ -116,7 +161,44 @@ export default defineComponent({
           tags: ['WordPress', 'PHP', 'JavaScript', 'CSS', 'SEO'],
         },
       ] as Job[],
+
+      integrationCategories: [
+        {
+          name: 'HRIS / ATS / People systems',
+          systems: ['Personio', 'CatalystOne', 'HaileyHR', 'Talent Tech', 'Sage People', 'SuccessFactors', 'SameSystem', 'Agresso', 'Microsoft Entra / AD'],
+        },
+        {
+          name: 'Communication & engagement',
+          systems: ['Microsoft Teams', 'Microsoft Outlook', 'Relesys', 'Ziik', 'EkkoApp', 'Intercom'],
+        },
+        {
+          name: 'CRM & sales',
+          systems: ['HubSpot', 'Plecto'],
+        },
+        {
+          name: 'Project & operations',
+          systems: ['Linear', 'Landax'],
+        },
+        {
+          name: 'Finance & logistics',
+          systems: ['E-Conomic', 'GLS'],
+        },
+        {
+          name: 'Automation & low-code',
+          systems: ['Make.com', 'AWS S3', 'Azure', 'Caspio'],
+        },
+        {
+          name: 'Product API',
+          systems: ['Learningbank'],
+        },
+      ] as IntegrationCategory[],
     }
+  },
+
+  computed: {
+    totalSystems(): number {
+      return this.integrationCategories.reduce((sum, cat) => sum + cat.systems.length, 0)
+    },
   },
 })
 </script>

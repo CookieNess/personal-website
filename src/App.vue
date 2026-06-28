@@ -65,7 +65,7 @@
     <WorkHistory />
     <HowIWork />
     <InTheirWords />
-    <WorkProud />
+    <Projects />
     <Connect />
   </div>
 </template>
@@ -77,9 +77,9 @@ import NavBar from '@/components/NavBar.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import WorkHistory from '@/components/WorkHistory.vue'
 import InTheirWords from './components/InTheirWords.vue'
-import WorkProud from './components/WorkProud.vue'
 import Connect from './components/Connect.vue'
 import HowIWork from './components/HowIWork.vue'
+import Projects from './components/Projects.vue'
 
 export default defineComponent({
   components: {
@@ -88,8 +88,8 @@ export default defineComponent({
     WorkHistory,
     InTheirWords,
     Connect,
-    WorkProud,
     HowIWork,
+    Projects,
   },
 })
 </script>
