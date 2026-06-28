@@ -44,13 +44,13 @@
             href="#work"
             class="px-7 py-3 rounded-md bg-mauve text-base font-medium text-crust hover:bg-lavender transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(203,166,247,0.25)]"
           >
-            See my work
+            My work
           </a>
           <a
-            href="#contact"
+            href="#connect"
             class="px-7 py-3 rounded-md border border-surface1 text-mauve font-medium hover:border-mauve transition-all hover:-translate-y-0.5"
           >
-            Get in touch
+            Connect
           </a>
         </div>
       </div>
@@ -63,6 +63,7 @@
 
     <AboutSection />
     <WorkHistory />
+    <HowIWork />
     <PlaceholderSection section-id="technologies" title="Technologies"      :dark="true"  />
     <WorkProud />
     <InTheirWords />
@@ -80,6 +81,7 @@ import WorkHistory from '@/components/WorkHistory.vue'
 import InTheirWords from './components/InTheirWords.vue'
 import WorkProud from './components/WorkProud.vue'
 import Connect from './components/Connect.vue'
+import HowIWork from './components/HowIWork.vue'
 
 export default defineComponent({
   components: {
@@ -90,6 +92,7 @@ export default defineComponent({
     InTheirWords,
     Connect,
     WorkProud,
+    HowIWork,
   },
 })
 </script>
