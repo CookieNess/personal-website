@@ -27,7 +27,7 @@
               <h3 class="font-display text-xl font-bold text-text mb-3">
                 <a :href="job.url" target="_blank" rel="noopener noreferrer" class="hover:text-mauve transition-colors inline-flex items-center gap-2">
                   {{ job.company }}
-                  <span class="text-overlay1 text-sm">↗</span>
+                  <MoveUpRight class="w-4 h-4" />
                 </a>
               </h3>
               <div class="flex flex-col gap-1" :class="index % 2 === 0 ? 'md:items-end' : ''">
@@ -39,7 +39,7 @@
             </div>
 
             <div :class="index % 2 === 0 ? 'md:pl-12' : 'md:order-1 md:pr-12'">
-              <div class="rounded-2xl bg-surface0 border border-surface1 p-6">
+              <div class="glow rounded-2xl bg-surface0 border border-surface1 p-6">
                 <p class="text-subtext0 leading-relaxed mb-5 text-sm">{{ job.description }}</p>
                 <div
                   class="flex flex-wrap gap-2"
@@ -98,6 +98,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { MoveUpRight } from 'lucide-vue-next'
 
 interface Role {
   title: string
@@ -118,6 +119,7 @@ interface IntegrationCategory {
 }
 
 export default defineComponent({
+  components: { MoveUpRight },
   data() {
     return {
       systemsOpen: false,

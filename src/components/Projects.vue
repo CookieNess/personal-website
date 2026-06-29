@@ -35,7 +35,7 @@
           <div
             v-for="(item, index) in customerCases"
             :key="item.title"
-            class="rounded-2xl bg-surface0 border border-surface1 p-8 grid md:grid-cols-[1fr_2fr] gap-8 items-start"
+            class="glow rounded-2xl bg-surface0 border border-surface1 p-8 grid md:grid-cols-[1fr_2fr] gap-8 items-start"
           >
             <div>
               <p class="label text-mauve mb-2">Case {{ index + 1 }}</p>
@@ -68,7 +68,7 @@
           <div
             v-for="project in personalProjects"
             :key="project.title"
-            class="rounded-2xl bg-surface0 border border-surface1 p-6 flex flex-col gap-4"
+            class="glow rounded-2xl bg-surface0 border border-surface1 p-6 flex flex-col gap-4"
           >
             <div class="flex items-start justify-between gap-4">
               <h3 class="font-display text-lg font-bold text-text">{{ project.title }}</h3>

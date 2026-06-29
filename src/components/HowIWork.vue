@@ -16,7 +16,7 @@
         <div
           v-for="(stage, i) in stages"
           :key="stage.title"
-          class="rounded-2xl bg-surface0 border border-surface1 p-6 flex flex-col gap-3"
+          class="glow rounded-2xl bg-surface0 border border-surface1 p-6 flex flex-col gap-3"
         >
           <div
             class="flex items-center justify-between cursor-pointer md:cursor-default"
