@@ -69,7 +69,7 @@
 
       <div class="grid md:grid-cols-3 gap-6">
         <div class="glow md:col-span-2 rounded-2xl bg-surface0 border border-mauve/30 p-6 flex flex-col gap-4">
-          <p class="text-mauve text-3xl leading-none font-display">"</p>
+          <p class="text-mauve text-1xl leading-none font-display">// customer</p>
           <p class="text-subtext1 leading-relaxed text-sm flex-1">{{ testimonials[0]!.quote }}</p>
           <p class="label text-overlay1">— {{ testimonials[0]!.role }}</p>
         </div>
@@ -80,7 +80,7 @@
             :key="testimonial.role"
             class="glow rounded-2xl bg-surface0 border border-surface1 p-6 flex flex-col gap-4 flex-1"
           >
-            <p class="text-mauve text-3xl leading-none font-display">"</p>
+            <p class="text-mauve text-1xl leading-none font-display">// customer</p>
             <p class="text-subtext1 leading-relaxed text-sm flex-1">{{ testimonial.quote }}</p>
             <p class="label text-overlay1">— {{ testimonial.role }}</p>
           </div>

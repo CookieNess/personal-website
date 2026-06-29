@@ -78,7 +78,12 @@
                 rel="noopener noreferrer"
                 class="label text-overlay1 hover:text-mauve transition-colors shrink-0 flex items-center gap-1"
               >
-                Github <Github class="w-5 h-5" />
+                <template v-if="project.isPdf">
+                  PDF <FileText class="w-5 h-5" />
+                </template>
+                <template v-else>
+                  Github <Github class="w-5 h-5" />
+                </template>
               </a>
             </div>
             <p class="text-subtext0 text-sm leading-relaxed flex-1">{{ project.description }}</p>
@@ -95,7 +100,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Github } from 'lucide-vue-next'
+import { Github, FileText } from 'lucide-vue-next'
 
 interface CustomerCase {
   title: string
@@ -111,6 +116,7 @@ interface PersonalProject {
   description: string
   url: string
   tags: string[]
+  isPdf?: boolean
 }
 
 interface Tab {
@@ -121,6 +127,7 @@ interface Tab {
 export default defineComponent({
   components: {
     Github,
+    FileText,
   },
   data() {
     return {
@@ -170,6 +177,20 @@ export default defineComponent({
           description: 'A visualiser for sorting algorithms — the serious ones and the joke ones. Watch Bubble Sort, Merge Sort and Quicksort do their thing, or let Stalin Sort simply remove any element that isn\'t in order. Each algorithm comes with a plain-English explanation and time complexity breakdown. Because sorting algorithms are more fun when Sleep Sort is in the mix.',
           url: 'https://github.com/frederik-kjaergaard/sorting-shenanigans',
           tags: ['Algorithms', 'Visualisation', 'JavaScript', 'Stalin Sort'],
+        },
+        {
+          title: 'Bachelor Thesis',
+          description: 'My bachelor thesis in Computer Science & Engineering. Lorem ipsum placeholder until you want to add a real description.',
+          url: '/pdfs/bachelor_thesis_2023.pdf',
+          tags: ['Computer Science', 'LaTeX', '2023'],
+          isPdf: true,
+        },
+        {
+          title: 'Master Thesis',
+          description: 'My master thesis in Computer Science & Engineering, built in collaboration with Axion. Lorem ipsum placeholder.',
+          url: '/pdfs/master_thesis_2025.pdf',
+          tags: ['Computer Science', 'LaTeX', 'Axion', '2025'],
+          isPdf: true,
         },
       ] as PersonalProject[],
     }
