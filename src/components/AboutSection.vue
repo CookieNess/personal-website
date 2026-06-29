@@ -1,3 +1,5 @@
+
+
 <template>
   <section id="about" class="bg-mantle py-32 px-6">
     <div class="max-w-6xl mx-auto">
@@ -82,6 +84,31 @@
         </div>
       </div>
 
+      <div class="mt-12 border-t border-surface1 pt-12">
+        <h3 class="font-display text-xl font-semibold text-text mb-6">Credentials</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a
+            v-for="cert in certificates"
+            :key="cert.label"
+            :href="cert.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glow group rounded-2xl bg-surface0 border border-surface1 p-5 flex items-center justify-between gap-4"
+          >
+            <div>
+              <p class="text-text text-sm font-medium leading-snug">{{ cert.label }}</p>
+              <p class="label text-overlay1 mt-1">{{ cert.sub }}</p>
+            </div>
+            <template v-if="cert.type === 'degree'">
+              <GraduationCap class="text-overlay1 group-hover:text-mauve w-6 h-6 shrink-0" />
+            </template>
+            <template v-else>
+              <Award class="text-overlay1 group-hover:text-mauve w-6 h-6 shrink-0" />
+            </template>
+          </a>
+        </div>
+      </div>
+
       <div class="mt-20 flex flex-col sm:flex-row gap-6 items-center border-t border-surface1 pt-12">
         <button @click="lightboxOpen = true" class="shrink-0">
           <div class="w-20 h-20 rounded-xl overflow-hidden border border-surface1 hover:border-mauve transition-colors cursor-zoom-in">
@@ -111,8 +138,20 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { GraduationCap, Award } from 'lucide-vue-next'
+
+interface Certificate {
+  label: string
+  sub: string
+  url: string
+  type: 'degree' | 'certificate'
+}
 
 export default defineComponent({
+  components: {
+    GraduationCap,
+    Award,
+  },
   data() {
     return {
       lightboxOpen: false,
@@ -132,6 +171,26 @@ export default defineComponent({
         'Requirements gathering',
         'Customer onboarding',
       ],
+      certificates: [
+        { 
+          label: 'BSc in Engineering', 
+          sub: 'Software Technology',
+          url: 'https://app.diplomasafe.com/en-US/diploma/db79527a2ce1e2e2a0a535b4200117d3fdb1da33a',
+          type: 'degree'
+        },
+        { 
+          label: 'MSc in Engineering', 
+          sub: 'Computer Science & Engineering - Software Engineering',
+          url: 'https://app.diplomasafe.com/en-US/certificates/d6065cfa3ecceca605ed87d7ef13650cff4ccc716',
+          type: 'degree'
+        },
+        { 
+          label: 'Project, Programme and Portfolio Management Diploma', 
+          sub: 'ISO 21500 & ISO 21502',
+          url: 'https://app.diplomasafe.com/en-US/diploma/d89c0024072e060ca525d4ca0163e3d4b0c49c013',
+          type: 'certificate'
+        },
+      ] as Certificate[],
     }
   },
 })
