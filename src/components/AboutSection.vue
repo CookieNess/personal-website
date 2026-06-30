@@ -9,18 +9,14 @@
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-24">
         <div class="order-2 md:order-1">
           <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-6 leading-tight">
-            Lorem ipsum dolor sit amet,<br />
-            <span class="text-mauve">consectetur adipiscing elit.</span>
+            I do not hand off the hard parts,<br />
+            <span class="text-mauve">I own them.</span>
           </h2>
           <p class="text-subtext0 leading-relaxed mb-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            I am a Technical Solutions Engineer from Denmark with a Master of Science degree in Computer Science and Engineering - but the degree is not really the point. The point is that <span class="text-mauve font-medium">I am in the room for every part of an implementation</span>: the sales conversation, the IT alignment calls, the actual building, the testing, signing-off, and whatever comes through support after. <span class="text-mauve font-medium">I do not pass the torch. I carry it the whole way.</span>
           </p>
           <p class="text-subtext0 leading-relaxed">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Yes, I am a software engineer and I can build entire applications, but <span class="text-mauve font-medium">my real expertise is translating the most complex technical setups into something every stakeholder can understand</span>. Sales representative, Head of HR, or the die-hard senior engineer, I can explain a setup in a way that makes sure everybody understands exactly what it means for them.
           </p>
         </div>
 
@@ -39,8 +35,7 @@
               ↓ technical
             </span>
             <p class="text-subtext0 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+              It is possible to set up an OAuth 2.0 connection with your Microsoft Entra as the identity provider, in order to create an integration that automatically calls our public API endpoints for upserting users. The data will be fetched from the agreed fields and formatted as JSON for the payload, to ensure the endpoints accept it.
             </p>
           </div>
 
@@ -49,8 +44,7 @@
               ↓ what it means
             </span>
             <p class="text-text leading-relaxed">
-              Lorem ipsum dolor sit amet, this is the plain-English version that
-              anyone — technical or not — would understand immediately.
+              It is possible to set up a connection with your Microsoft Entra, and create an integration that automatically creates and updates your users on the platform. They will be created and updated with the data we agreed upon.
             </p>
           </div>
 
@@ -59,7 +53,7 @@
 
       <div>
         <h3 class="font-display text-xl font-semibold text-text mb-6">
-          Lorem ipsum, fluent in both
+          A taste of what I work with
         </h3>
         <div class="grid md:grid-cols-2 gap-8">
 
@@ -116,9 +110,7 @@
           </div>
         </button>
         <p class="text-subtext0 text-sm leading-relaxed">
-          Lorem ipsum dolor sit amet — before integrations, it was choreography.
-          Consectetur adipiscing elit, competed at the World Championships as a
-          professional dancer, turns out precision under pressure transfers pretty well.
+          A fact most colleagues find out eventually: before all of this, I was a professional dancer who competed at the European & World Championships. Different kind of choreography these days to be honest, but same obsession with getting the details <span class="text-mauve italic">just</span> right.
         </p>
       </div>
 
@@ -156,20 +148,29 @@ export default defineComponent({
     return {
       lightboxOpen: false,
       systemTags: [
-        'REST & GraphQL APIs',
-        'Microservices vs. monolith',
-        'Webhooks & event-driven design',
-        'OAuth2 & auth flows',
-        'Vue & TypeScript',
-        'Relational data modelling',
+        'REST APIs',
+        'Microservices',
+        'Vue',
+        'TypeScript',
+        'NestJS',
+        'MySQL',
+        'Unit Testing',
+        'Linux',
+        'Relational Databases',
+        'AI-assisted development (Codex, Claude)',
+        'Technical diagramming'
       ],
       businessTags: [
         'HubSpot',
         'Intercom',
         'Make.com',
-        'Stakeholder workshops',
-        'Requirements gathering',
+        'Linear',
         'Customer onboarding',
+        'Scope creation & documentation',
+        'Pre-sales support',
+        'Up-sell collaboration with CSMs',
+        'Technical translation',
+        'Project management',
       ],
       certificates: [
         { 
