@@ -4,11 +4,11 @@
 
       <p class="label text-mauve mb-4">Work History</p>
       <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-6 leading-tight">
-        Where I've been,<br />
+        Where I have been,<br />
         <span class="text-mauve">and what I built.</span>
       </h2>
       <p class="text-subtext0 leading-relaxed mb-24 max-w-xl">
-        Every role shaped how I work today — from early freelance projects to owning
+        Every role shaped how I work today - from early freelance projects to owning
         the full implementation lifecycle at scale.
       </p>
 
@@ -40,7 +40,14 @@
 
             <div :class="index % 2 === 0 ? 'md:pl-12' : 'md:order-1 md:pr-12'">
               <div class="glow rounded-2xl bg-surface0 border border-surface1 p-6">
-                <p class="text-subtext0 leading-relaxed mb-5 text-sm">{{ job.description }}</p>
+                <p
+                  v-for="(paragraph, i) in job.description"
+                  :key="i"
+                  class="text-subtext0 leading-relaxed text-sm"
+                  :class="i < job.description.length - 1 ? 'mb-3' : 'mb-5'"
+                >
+                  {{ paragraph }}
+                </p>
                 <div
                   class="flex flex-wrap gap-2"
                   :class="index % 2 !== 0 ? 'md:justify-end' : ''"
@@ -60,7 +67,7 @@
           class="flex items-center gap-4 w-full group"
         >
           <div class="flex-1 text-left">
-            <p class="label text-mauve mb-1">Systems I've built integrations with</p>
+            <p class="label text-mauve mb-1">Systems I have built integrations with</p>
             <p class="text-subtext0 text-sm">{{ systemsOpen ? 'Click to collapse' : `${totalSystems} systems across ${integrationCategories.length} categories` }}</p>
           </div>
           <span
@@ -109,7 +116,7 @@ interface Job {
   company: string
   url: string
   roles: Role[]
-  description: string
+  description: string[]
   tags: string[]
 }
 
@@ -132,8 +139,13 @@ export default defineComponent({
             { title: 'Technical Solutions Engineer', period: 'Oct 2025 – Present' },
             { title: 'Integration Developer', period: 'Sep 2023 – Oct 2025' },
           ],
-          description: 'The role where I stopped being just a developer and started owning the entire journey. From sitting in sales meetings to building the integration to being on the call when something breaks — I\'m in every stage, every time. I\'ve expanded the Integration Hub, built a public-facing API, and developed custom automations for a wide range of customer systems.',
-          tags: ['TypeScript', 'Vue', 'REST APIs', 'Make.com', 'Customer onboarding', 'Full lifecycle'],
+          description: [
+            'The role where I stopped being just a developer and started owning the entire journey. From sitting in customer and alignment meetings, to building the project, to being on the call when something breaks - I am in every stage, every time.',
+            'I have taken full ownership of our standard integration catalogue, expanding it significantly, adding new connectors and maintaining everything it offer.',
+            'I have co-architected and built a public facing API, and developed custom automations for a wide range of customers and systems.',
+            'I have built a reputation for being the go-to person for anything integration related, both internally and with externally, and I love it.',
+          ],
+          tags: [],
         },
         {
           company: 'Axion',
@@ -141,8 +153,11 @@ export default defineComponent({
           roles: [
             { title: 'Technical Lead (Master Thesis)', period: 'Feb 2025 – Jul 2025' },
           ],
-          description: 'Joined the founding team of a Danish DTU startup as part of my master thesis. I led the full technical design and implementation — architecting the Android app in Kotlin, designing the cloud backend in C#/.NET on Azure, setting up the database, CI/CD pipelines, error monitoring and analytics. Defined the entire tech stack from scratch.',
-          tags: ['Kotlin', 'C# / .NET', 'Azure', 'REST API', 'MySQL', 'GitHub Actions'],
+          description: [
+            'I joined the founding team of a Danish DTU startup as part of my master thesis. I led the full technical design and implementation - architecting the Android app in Kotlin, designing the cloud backend in C#/.NET on Azure, setting up the database, CI/CD pipelines, error monitoring and analytics.',
+            'I defined the entire tech stack from scratch and owned every step. From the very first architectural decision to a working application in production, available on Google Play Store.'
+        ],
+          tags: [],
         },
         {
           company: 'SkanCode A/S',
@@ -150,8 +165,12 @@ export default defineComponent({
           roles: [
             { title: 'Software Developer', period: 'Nov 2022 – May 2023' },
           ],
-          description: 'Built REST API integrations in Java Spring Boot on AWS, connecting third-party services like GLS and financial platforms to a low-code system. Designed and maintained T-SQL databases, collaborated with stakeholders to scope projects and delivered tailored integration solutions that bridged hardware, software and external systems.',
-          tags: ['Java Spring Boot', 'AWS', 'REST APIs', 'T-SQL', 'JavaScript'],
+          description: [
+            'I built REST API integrations in Java Spring Boot on AWS, connecting third-party services like GLS and financial platforms to a low-code system, Caspio.',
+            'I designed and maintained T-SQL databases, collaborated with stakeholders to scope projects and delivered tailored integration solutions that bridged hardware, internal software and external systems.',
+            'This was my first real taste of working directly with customers - understanding their struggles first, then building the solution. A combination I have not let go of since.'
+          ],
+          tags: [],
         },
         {
           company: 'Reinhardt Dans',
@@ -159,8 +178,12 @@ export default defineComponent({
           roles: [
             { title: 'Website Developer', period: 'May 2021 – Jan 2022' },
           ],
-          description: 'Designed and built a custom WordPress site for a dance school — custom theme, tailored plugins, responsive design, contact forms and SEO setup. Also provided ongoing maintenance and trained the administrators on managing the CMS themselves. My first real taste of owning a project end to end.',
-          tags: ['WordPress', 'PHP', 'JavaScript', 'CSS', 'SEO'],
+          description: [
+            'I designed and built a custom WordPress site for a dance school. It featured a custom theme, tailored plugins, responsive design, contact forms and SEO setup.',
+            'I also provided ongoing maintenance and trained the administrators on managing the CMS themselves.',
+            'My first real taste of owning a project end to end',          
+          ],
+          tags: [],
         },
       ] as Job[],
 

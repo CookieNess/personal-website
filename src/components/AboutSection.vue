@@ -35,7 +35,7 @@
               ↓ technical
             </span>
             <p class="text-subtext0 leading-relaxed">
-              It is possible to set up an OAuth 2.0 connection with your Microsoft Entra as the identity provider, in order to create an integration that automatically calls our public API endpoints for upserting users. The data will be fetched from the agreed fields and formatted as JSON for the payload, to ensure the endpoints accept it.
+              It is possible to set up an OAuth 2.0 connection with your Microsoft Entra as the identity provider, in order to create an integration that automatically calls our public REST API endpoints for upserting users. The data will be fetched from the agreed fields and formatted as JSON for the payload, to ensure the endpoints accept it.
             </p>
           </div>
 
@@ -59,7 +59,7 @@
 
           <div>
             <p class="label text-overlay1 mb-3">
-              Systems & architecture
+              Systems & Architecture
             </p>
             <div class="flex flex-wrap gap-2">
               <span v-for="tag in systemTags" :key="tag" class="tag">{{ tag }}</span>
@@ -68,7 +68,7 @@
 
           <div>
             <p class="label text-overlay1 mb-3">
-              Tools that run the business
+              Beyond the Code
             </p>
             <div class="flex flex-wrap gap-2">
               <span v-for="tag in businessTags" :key="tag" class="tag">{{ tag }}</span>
@@ -168,7 +168,7 @@ export default defineComponent({
         'Customer onboarding',
         'Scope creation & documentation',
         'Pre-sales support',
-        'Up-sell collaboration with CSMs',
+        'Up-sell collaboration',
         'Technical translation',
         'Project management',
       ],
