@@ -4,7 +4,7 @@
 
       <p class="label text-mauve mb-4">Connect</p>
       <h2 class="font-display text-3xl md:text-5xl font-bold text-text mb-6 leading-tight">
-        Let's connect!
+        Let's connect.
       </h2>
       <p class="text-subtext0 leading-relaxed mb-10 max-w-md mx-auto">
         Want to talk integrations, implementations, or just have a good conversation?

@@ -13,7 +13,7 @@
             <span class="text-mauve">I own them.</span>
           </h2>
           <p class="text-subtext0 leading-relaxed mb-4">
-            I am a Technical Solutions Engineer from Denmark with a Master of Science degree in Computer Science and Engineering - but the degree is not really the point. The point is that <span class="text-mauve font-medium">I am in the room for every part of an implementation</span>: the sales conversation, the IT alignment calls, the actual building, the testing, signing-off, and whatever comes through support after. <span class="text-mauve font-medium">I do not pass the torch. I carry it the whole way.</span>
+            I am a Technical Solutions Engineer from Denmark with a Master of Science degree in Computer Science and Engineering from the Technical University of Denmark. But, the degree is not really the point. The point is that <span class="text-mauve font-medium">I am in the room for every part of an implementation</span>: the sales conversation, the IT alignment calls, the actual building, the testing, signing-off, and whatever comes through support after. <span class="text-mauve font-medium">I do not pass the torch. I carry it the whole way.</span>
           </p>
           <p class="text-subtext0 leading-relaxed">
             Yes, I am a software engineer and I can build entire applications, but <span class="text-mauve font-medium">my real expertise is translating the most complex technical setups into something every stakeholder can understand</span>. Sales representative, Head of HR, or the die-hard senior engineer, I can explain a setup in a way that makes sure everybody understands exactly what it means for them.

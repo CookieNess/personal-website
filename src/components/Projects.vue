@@ -4,11 +4,11 @@
 
       <p class="label text-mauve mb-4">Projects</p>
       <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-6 leading-tight">
-        Things I've built<br />
+        Things I have built<br />
         <span class="text-mauve">that actually mattered.</span>
       </h2>
       <p class="text-subtext0 leading-relaxed mb-16 max-w-xl">
-        Some for customers, some for fun. All of them built with care.
+        Some of it paid, some of it just because I wanted to. All of it mine.
       </p>
 
       <div class="flex gap-3 mb-12">
@@ -140,56 +140,56 @@ export default defineComponent({
 
       customerCases: [
         {
-          title: 'Centralised integration across 17 factories',
-          industry: 'International manufacturing',
-          problem: 'A global company needed all users — white collar and blue collar — on the platform. Their headquarters ran a standardised HRIS, but 17 factories across the world each ran something different: different HR systems, different formats, some just an Excel sheet.',
-          solution: 'Built a centralised integration running on an SFTP server where all 17 factories could upload their files. Files were automatically processed into standardised user records and synced to the platform — creating, updating and deactivating users as needed. This ran alongside a separate Microsoft Entra integration handling the white collar workforce.',
-          outcome: 'Administrators no longer had to manually manage users across 17 locations. Each factory uploads their file, the rest is automatic.',
-          tags: ['SFTP', 'Microsoft Entra', 'User sync', 'Multi-system integration', 'Automation'],
+          title: 'Centralised Integration Across 17 Factories',
+          industry: 'International Manufacturing Company',
+          problem: 'A global company needed all users, white and blue collar, on their platform. Their headquarters ran a standardised HRIS, but 17 factories across the world each ran something different: different HR systems, different formats, some just an Excel sheet.',
+          solution: 'Built a centralised integration running on an SFTP server where all 17 factories could upload CSV files for the blue collar workers. Files were automatically processed into standardised user records and synced to their platform, automatically creating, updating and deactivating users as needed. This ran alongside a separate Microsoft Entra integration handling the white collar workforce.',
+          outcome: 'Administrators no longer had to manually manage users across 17 locations. Each factory uploads their file and the rest is handled automatically.',
+          tags: [],
         },
         {
-          title: 'Building a department hierarchy from incomplete data',
+          title: 'Building A Department Hierarchy From Incomplete Data',
           industry: 'International retailer',
-          problem: 'A complex organisation with headquarters, regions, cost centres and departments had severely limited data in their Microsoft Entra. The missing structure meant they couldn\'t use large parts of the platform. The customer was frustrated — they understood the root cause was their own data, but still needed a solution.',
-          solution: 'Built an integration that automatically constructed the full department hierarchy from the available Entra data. Where data was missing — regions, sub-departments, etc. — complex rules filled the gaps. The final structure was roughly 50% their real data and 50% derived logic, but the result was a complete, accurate hierarchy.',
-          outcome: 'The company could suddenly use automations and features that were previously impossible due to the incomplete setup. A frustrating situation turned into a platform they could actually rely on.',
-          tags: ['Microsoft Entra', 'Hierarchy building', 'Data transformation', 'Complex rule engine'],
+          problem: 'A complex organisation with headquarters, regions, cost centres, departments, etc., had severely limited data in their Microsoft Entra. The missing structure meant they could not utilize their platform effectively. The customer was frustrated. They understood the root cause was their own data, but still needed a solution.',
+          solution: 'Built an integration that automatically constructed the full department hierarchy from the available Entra data. Where data was missing, complex rules filled the gaps, to keep it automated. The final structure was roughly 50% their real data and 50% derived logic, but the result was a complete, accurate hierarchy.',
+          outcome: 'The company could use automations and features that were previously difficult to use due to the incomplete setup. A frustrating situation turned into a platform they could actually rely on.',
+          tags: [],
         },
         {
-          title: 'Co-architecting a public-facing API',
-          industry: 'Internal platform — Learningbank',
-          problem: 'Customers who wanted to build their own integrations with the platform had no good way to do so — there were no up-to-date public endpoints. The options were either pay for a custom integration, try to use the old broken endpoints or go without it.',
-          solution: 'Co-architected with the lead developer and built the entire public facing API in TypeScript. Designed the endpoints, defined the data contracts, and built the infrastructure customers needed to pull data and build their own integrations independently.',
-          outcome: 'Customers gained full self-service integration capability. A platform limitation became a platform strength.',
-          tags: ['TypeScript', 'API design', 'REST', 'Architecture', 'Developer experience'],
+          title: 'Co-architecting A Public Facing API',
+          industry: 'Internal platform - Learningbank',
+          problem: 'Customers who wanted to build their own integrations with the platform had no good way to do so. There were no up-to-date public endpoints. The options were either: pay for a custom integration, try to use the old broken endpoints or simply go without it.',
+          solution: 'Co-architected with the lead developer and built the entire public facing API in TypeScript and NestJS. Designed the endpoints, defined the data structures and built the infrastructure customers needed to pull data and build their own integrations independently.',
+          outcome: 'Customers gained full self-service integration capability. A platform limitation became a platform strength and selling point.',
+          tags: [],
         },
       ] as CustomerCase[],
 
       personalProjects: [
         {
-          title: 'This website',
-          description: 'Built from scratch in Vue 3 and TypeScript, styled with Tailwind CSS and the Catppuccin Mocha palette. Designed and developed end to end — because if you\'re going to talk about building things, you should probably build your own portfolio.',
-          url: 'https://github.com/frederik-kjaergaard/personal-website',
+          title: 'This Website',
+          description: 'Built in Vue 3 and TypeScript with Tailwind CSS. Designed together with AI assistance, but every decision, every component and every section shaped and owned by me.',
+          url: 'https://github.com/CookieNess/personal-website',
           tags: ['Vue 3', 'TypeScript', 'Tailwind CSS'],
         },
         {
           title: 'Sorting Shenanigans',
-          description: 'A visualiser for sorting algorithms — the serious ones and the joke ones. Watch Bubble Sort, Merge Sort and Quicksort do their thing, or let Stalin Sort simply remove any element that isn\'t in order. Each algorithm comes with a plain-English explanation and time complexity breakdown. Because sorting algorithms are more fun when Sleep Sort is in the mix.',
-          url: 'https://github.com/frederik-kjaergaard/sorting-shenanigans',
-          tags: ['Algorithms', 'Visualisation', 'JavaScript', 'Stalin Sort'],
+          description: 'A visualiser for sorting algorithms: both the serious ones and the joke ones. I have always been a fan of sorting algorithms and trying to figure out the time complexity, of algorithms that should not even exist. This project is a playground for that.',
+          url: 'https://github.com/CookieNess/sorting-shenanigans',
+          tags: ['Sorting Algorithms', 'Time Complexity', 'TypeScript', 'Vue'],
         },
         {
           title: 'Bachelor Thesis',
-          description: 'My bachelor thesis in Computer Science & Engineering. Lorem ipsum placeholder until you want to add a real description.',
+          description: 'My bachelor thesis at the Technical University of Denmark (DTU) in Computer Science & Engineering. I, together with my project partner, built a system to track and visualise your portfolio. First limited to stocks, but designed to be extended to any form of asset. The project landed us a 10, or B, grade. The system is built in Flutter/Dart, C# and T-SQL',
           url: '/pdfs/bachelor_thesis_2023.pdf',
-          tags: ['Computer Science', 'LaTeX', '2023'],
+          tags: ['Flutter', 'Dart', 'C#', 'T-SQL'],
           isPdf: true,
         },
         {
           title: 'Master Thesis',
-          description: 'My master thesis in Computer Science & Engineering, built in collaboration with Axion. Lorem ipsum placeholder.',
+          description: 'My master thesis at the Technical University of Denmark (DTU) in Computer Science & Engineering. I, together with my project partner, built an Android application in Kotlin, that could limit your screen time by blocking apps and websites. My project partner created the company, Axion, where I handled most of the technical work. The application is built in Kotlin with a C#/ASP.NET backend and a MySQL database, all running on Azure. Sentry was used for error monitoring and Firebase for analytics. The project landed us a 12, or A, grade.',
           url: '/pdfs/master_thesis_2025.pdf',
-          tags: ['Computer Science', 'LaTeX', 'Axion', '2025'],
+          tags: ['Kotlin', 'C#', 'MySQL', 'Azure', 'Sentry', 'Firebase', 'Business development'],
           isPdf: true,
         },
       ] as PersonalProject[],
