@@ -201,7 +201,7 @@ export default defineComponent({
 <style scoped>
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.70rem;
   letter-spacing: 0.02em;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
