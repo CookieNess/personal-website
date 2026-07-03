@@ -4,12 +4,11 @@
 
       <p class="label text-mauve mb-4">In their words</p>
       <h2 class="font-display text-3xl md:text-4xl font-bold text-text mb-6 leading-tight">
-        I don't just answer the question.<br />
-        <span class="text-mauve">I answer what's behind it.</span>
+        I do not just answer the question.<br />
+        <span class="text-mauve">I answer what is behind it.</span>
       </h2>
       <p class="text-subtext0 leading-relaxed mb-16 max-w-xl">
-        Most questions have a surface ask and a real concern underneath. I listen for both
-        and respond to both. The people I've worked with noticed.
+        Most questions carry a concern that nobody actually says out loud. <span class="text-mauve font-medium">Finding that concern, and addressing it, is something I always do.</span> The customers I work with notice it, just as they notice when <span class="text-mauve font-medium">complex technical setups suddenly start making sense to everyone in the room.</span>
       </p>
 
       <div class="rounded-2xl bg-surface0 border border-surface1 p-8 md:p-12 mb-6">
@@ -34,7 +33,7 @@
               </div>
 
               <div class="bg-red/10 border border-red/20 rounded-tl-sm rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4 max-w-s opacity-60">
-                <p class="text-red text-sm leading-relaxed line-through">No, that's not possible.</p>
+                <p class="text-red text-sm leading-relaxed">No, that's not possible.</p>
               </div>
             </div>
           </div>
@@ -53,7 +52,7 @@
               </div>
 
               <div class="bg-green/10 border border-green/20 rounded-tl-sm rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4">
-                <p class="text-green text-sm leading-relaxed">That's not possible — but we recommend restricting self sign-up to a specific department with minimum permissions. Other customers do this to stay in full control of exactly who's joining.</p>
+                <p class="text-green text-sm leading-relaxed">That's not possible - but we recommend restricting self sign-up to a specific department with minimum permissions. Other customers do this to stay in full control of exactly who's joining.</p>
               </div>
             </div>
           </div>
@@ -104,15 +103,15 @@ export default defineComponent({
     return {
       testimonials: [
         {
-          quote: 'I just wanted to share how grateful and proud I feel about these past weeks of collaboration. From being lost and a little frustrated, to experiencing smooth collaboration thanks to clarity, quick replies and always kind approach from Frederik. You are a star. We need more people like you who are able to translate IT/developer language to English/business language. Now we also have a clearer picture on what is on our side and yours — and how the integration works.',
+          quote: 'I just wanted to share how grateful and proud I feel about these past weeks of collaboration. From being lost and a little frustrated, to experiencing smooth collaboration thanks to clarity, quick replies and always kind approach from Frederik. You are a star. We need more people like you who are able to translate IT/developer language to English/business language. Now we also have a clearer picture on what is on our side and yours - and how the integration works.',
           role: 'HR Specialist',
         },
         {
-          quote: 'Give Frederik a high five from me — he has a special gift for turning geek into understandable language.',
+          quote: 'Give Frederik a high five from me - he has a special gift for turning geek into understandable language.',
           role: 'Learning Design and System Manager',
         },
         {
-          quote: 'Working together over the past months has honestly been one of the highlights for me — not just because of what we delivered, but because of how we worked together: open, pragmatic and always with a lot of trust and fun.',
+          quote: 'Working together over the past months has honestly been one of the highlights for me - not just because of what we delivered, but because of how we worked together: open, pragmatic and always with a lot of trust and fun.',
           role: 'Project Manager, Digital Solutions',
         },
       ] as Testimonial[],
