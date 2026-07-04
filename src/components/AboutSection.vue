@@ -163,7 +163,7 @@ export default defineComponent({
       businessTags: [
         'HubSpot',
         'Intercom',
-        'Make.com',
+        'Make',
         'Linear',
         'Customer onboarding',
         'Scope creation & documentation',
