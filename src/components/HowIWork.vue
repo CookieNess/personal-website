@@ -99,6 +99,12 @@ export default defineComponent({
   methods: {
     toggle(i: number) {
       this.openIndex = this.openIndex === i ? null : i
+      if (this.openIndex !== null) {
+        if (!this.stages[i]) {
+          return
+        }
+        window.umami?.track(`how-i-work-stage-${this.stages[i].title.toLowerCase().replace(' ', '-')}`)
+      }
     },
   },
 })

@@ -74,6 +74,7 @@
               <h3 class="font-display text-lg font-bold text-text">{{ project.title }}</h3>
               <a
                 :href="project.url"
+                :data-umami-event="project.umamiEvent"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="label text-overlay1 hover:text-mauve transition-colors shrink-0 flex items-center gap-1"
@@ -116,6 +117,7 @@ interface PersonalProject {
   description: string
   url: string
   tags: string[]
+  umamiEvent: string
   isPdf?: boolean
 }
 
@@ -170,13 +172,15 @@ export default defineComponent({
           title: 'This Website',
           description: 'Built in Vue 3 and TypeScript with Tailwind CSS. Designed together with AI assistance, but every decision, every component and every section shaped and owned by me.',
           url: 'https://github.com/CookieNess/personal-website',
-          tags: ['Vue 3', 'TypeScript', 'Tailwind CSS'],
+          tags: ['Vue 3', 'TypeScript', 'Tailwind CSS', 'SEO', 'Analytics (Umami)'],
+          umamiEvent: 'projects-personal-website',
         },
         {
           title: 'Sorting Shenanigans',
           description: 'A visualiser for sorting algorithms: both the serious ones and the joke ones. I have always been a fan of sorting algorithms and trying to figure out the time complexity, of algorithms that should not even exist. This project is a playground for that.',
           url: 'https://github.com/CookieNess/sorting-shenanigans',
           tags: ['Sorting Algorithms', 'Time Complexity', 'TypeScript', 'Vue'],
+          umamiEvent: 'projects-sorting-shenanigans',
         },
         {
           title: 'Bachelor Thesis',
@@ -184,6 +188,7 @@ export default defineComponent({
           url: '/pdfs/bachelor_thesis_2023.pdf',
           tags: ['Flutter', 'Dart', 'C#', 'T-SQL'],
           isPdf: true,
+          umamiEvent: 'projects-bachelor-thesis',
         },
         {
           title: 'Master Thesis',
@@ -191,6 +196,7 @@ export default defineComponent({
           url: '/pdfs/master_thesis_2025.pdf',
           tags: ['Kotlin', 'C#', 'MySQL', 'Azure', 'Sentry', 'Firebase', 'Business development'],
           isPdf: true,
+          umamiEvent: 'projects-master-thesis',
         },
       ] as PersonalProject[],
     }

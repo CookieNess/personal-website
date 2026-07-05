@@ -16,6 +16,7 @@
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center gap-3 px-8 py-4 rounded-md bg-mauve text-crust font-medium hover:bg-lavender transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(203,166,247,0.25)]"
+        data-umami-event="connect-linkedin"
       >
         <Linkedin class="w-5 h-5" />
         Connect on LinkedIn

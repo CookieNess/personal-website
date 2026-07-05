@@ -25,7 +25,7 @@
 
             <div :class="index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:order-2 md:pl-12'">
               <h3 class="font-display text-xl font-bold text-text mb-3">
-                <a :href="job.url" target="_blank" rel="noopener noreferrer" class="hover:text-mauve transition-colors inline-flex items-center gap-2">
+                <a :href="job.url" :data-umami-event="job.umamiEvent" target="_blank" rel="noopener noreferrer" class="hover:text-mauve transition-colors inline-flex items-center gap-2">
                   {{ job.company }}
                   <MoveUpRight class="w-4 h-4" />
                 </a>
@@ -65,6 +65,7 @@
         <button
           @click="systemsOpen = !systemsOpen"
           class="flex items-center gap-4 w-full group"
+          data-umami-event="integrations-fold-out"
         >
           <div class="flex-1 text-left">
             <p class="label text-mauve mb-1">Systems I have built integrations with</p>
@@ -118,6 +119,7 @@ interface Job {
   roles: Role[]
   description: string[]
   tags: string[]
+  umamiEvent: string
 }
 
 interface IntegrationCategory {
@@ -146,6 +148,7 @@ export default defineComponent({
             'I have built a reputation for being the go-to person for anything integration related, both internally and with externally, and I love it.',
           ],
           tags: [],
+          umamiEvent: 'company-learningbank',
         },
         {
           company: 'Axion',
@@ -158,6 +161,7 @@ export default defineComponent({
             'I defined the entire tech stack from scratch and owned every step. From the very first architectural decision to a working application in production, available on Google Play Store.'
         ],
           tags: [],
+          umamiEvent: 'company-axion',
         },
         {
           company: 'SkanCode A/S',
@@ -171,6 +175,7 @@ export default defineComponent({
             'This was my first real taste of working directly with customers - understanding their struggles first, then building the solution. A combination I have not let go of since.'
           ],
           tags: [],
+          umamiEvent: 'company-skancode',
         },
         {
           company: 'Reinhardt Dans',
@@ -184,6 +189,7 @@ export default defineComponent({
             'My first real taste of owning a project end to end',          
           ],
           tags: [],
+          umamiEvent: 'company-reinhardt-dans',
         },
       ] as Job[],
 

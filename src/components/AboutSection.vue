@@ -85,6 +85,7 @@
             v-for="cert in certificates"
             :key="cert.label"
             :href="cert.url"
+            :data-umami-event="cert.umamiEvent"
             target="_blank"
             rel="noopener noreferrer"
             class="glow group rounded-2xl bg-surface0 border border-surface1 p-5 flex items-center justify-between gap-4"
@@ -137,6 +138,7 @@ interface Certificate {
   sub: string
   url: string
   type: 'degree' | 'certificate'
+  umamiEvent: string
 }
 
 export default defineComponent({
@@ -177,19 +179,22 @@ export default defineComponent({
           label: 'BSc in Engineering', 
           sub: 'Software Technology',
           url: 'https://app.diplomasafe.com/en-US/diploma/db79527a2ce1e2e2a0a535b4200117d3fdb1da33a',
-          type: 'degree'
+          type: 'degree',
+          umamiEvent: 'credentials-bsc-degree',
         },
         { 
           label: 'MSc in Engineering', 
           sub: 'Computer Science & Engineering - Software Engineering',
           url: 'https://app.diplomasafe.com/en-US/certificates/d6065cfa3ecceca605ed87d7ef13650cff4ccc716',
-          type: 'degree'
+          type: 'degree',
+          umamiEvent: 'credentials-msc-degree',
         },
         { 
           label: 'Project, Programme and Portfolio Management Diploma', 
           sub: 'ISO 21500 & ISO 21502',
           url: 'https://app.diplomasafe.com/en-US/diploma/d89c0024072e060ca525d4ca0163e3d4b0c49c013',
-          type: 'certificate'
+          type: 'certificate',
+          umamiEvent: 'credentials-project-management-diploma',
         },
       ] as Certificate[],
     }
