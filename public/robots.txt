@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://frederikkjaergaard.com/sitemap.xml
