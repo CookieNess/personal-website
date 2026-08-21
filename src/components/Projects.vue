@@ -170,21 +170,21 @@ export default defineComponent({
       personalProjects: [
         {
           title: 'This Website',
-          description: 'Built in Vue 3 and TypeScript with Tailwind CSS. Designed together with AI assistance, but every decision, every component and every section shaped and owned by me.',
+          description: 'Built in Vue 3 and TypeScript with Tailwind CSS, with AI assisted development - every decision, every component and every section shaped and owned by me.',
           url: 'https://github.com/CookieNess/personal-website',
           tags: ['Vue 3', 'TypeScript', 'Tailwind CSS', 'SEO', 'Analytics (Umami)'],
           umamiEvent: 'projects-personal-website',
         },
         {
           title: 'Sorting Shenanigans',
-          description: 'A visualiser for sorting algorithms: both the serious ones and the joke ones. I have always been a fan of sorting algorithms and trying to figure out the time complexity, of algorithms that should not even exist. This project is a playground for that.',
+          description: 'A visualiser for sorting algorithms - the serious ones and the joke ones. A playground for anyone curious about time complexity and algorithms that should not exist.',
           url: 'https://github.com/CookieNess/sorting-shenanigans',
           tags: ['Sorting Algorithms', 'Time Complexity', 'TypeScript', 'Vue'],
           umamiEvent: 'projects-sorting-shenanigans',
         },
         {
           title: 'Bachelor Thesis',
-          description: 'My bachelor thesis at the Technical University of Denmark (DTU) in Computer Science & Engineering. I, together with my project partner, built a system to track and visualise your portfolio. First limited to stocks, but designed to be extended to any form of asset. The project landed us a 10, or B, grade. The system is built in Flutter/Dart, C# and T-SQL',
+          description: 'Bachelor thesis at DTU. We built a system to track and visualise investment portfolios, starting with stocks. Grade: 10 (B). Built in Flutter/Dart, C# and T-SQL.',
           url: '/pdfs/bachelor_thesis_2023.pdf',
           tags: ['Flutter', 'Dart', 'C#', 'T-SQL'],
           isPdf: true,
@@ -192,7 +192,7 @@ export default defineComponent({
         },
         {
           title: 'Master Thesis',
-          description: 'My master thesis at the Technical University of Denmark (DTU) in Computer Science & Engineering. I, together with my project partner, built an Android application in Kotlin, that could limit your screen time by blocking apps and websites. My project partner created the company, Axion, where I handled most of the technical work. The application is built in Kotlin with a C#/ASP.NET backend and a MySQL database, all running on Azure. Sentry was used for error monitoring and Firebase for analytics. The project landed us a 12, or A, grade.',
+          description: 'Master thesis at DTU. We built an Android app in Kotlin that limits screen time by blocking apps and websites. It was built with my project partner who founded the company, Axion, around it. C#/ASP.NET backend on Azure, MySQL, Sentry and Firebase. Grade: 12 (A).',
           url: '/pdfs/master_thesis_2025.pdf',
           tags: ['Kotlin', 'C#', 'MySQL', 'Azure', 'Sentry', 'Firebase', 'Business development'],
           isPdf: true,

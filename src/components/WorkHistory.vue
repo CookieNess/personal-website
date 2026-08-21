@@ -142,10 +142,8 @@ export default defineComponent({
             { title: 'Integration Developer', period: 'Sep 2023 – Oct 2025' },
           ],
           description: [
-            'The role where I stopped being just a developer and started owning the entire journey. From sitting in customer and alignment meetings, to building the project, to being on the call when something breaks - I am in every stage, every time.',
-            'I have taken full ownership of our standard integration catalogue, expanding it significantly, adding new connectors and maintaining everything it offer.',
-            'I have co-architected and built a public facing API, and developed custom automations for a wide range of customers and systems.',
-            'I have built a reputation for being the go-to person for anything integration related, both internally and with externally, and I love it.',
+            'The role where I stopped being just a developer and started owning the entire journey - from customer meetings and alignment calls, to building the integration, to being on the call when something breaks. I am in every stage, every time.',
+            'I own our standard integration catalogue, co-architected and built our public-facing API, and develop custom automations for a wide range of customers and systems. All owned and maintained by me, from start to finish.',
           ],
           tags: [],
           umamiEvent: 'company-learningbank',
@@ -157,9 +155,9 @@ export default defineComponent({
             { title: 'Technical Lead (Master Thesis)', period: 'Feb 2025 – Jul 2025' },
           ],
           description: [
-            'I joined the founding team of a Danish DTU startup as part of my master thesis. I led the full technical design and implementation - architecting the Android app in Kotlin, designing the cloud backend in C#/.NET on Azure, setting up the database, CI/CD pipelines, error monitoring and analytics.',
-            'I defined the entire tech stack from scratch and owned every step. From the very first architectural decision to a working application in production, available on Google Play Store.'
-        ],
+            'Joined the founding team of a Danish DTU startup as part of my master thesis.',
+            'I led the full technical design and implementation, architecting the Android app in Kotlin, the cloud backend in C#/.NET on Azure, database, CI/CD, error monitoring and analytics - and owned every decision from first architecture to a working application on the Google Play Store.'
+          ],
           tags: [],
           umamiEvent: 'company-axion',
         },
@@ -170,9 +168,8 @@ export default defineComponent({
             { title: 'Software Developer', period: 'Nov 2022 – May 2023' },
           ],
           description: [
-            'I built REST API integrations in Java Spring Boot on AWS, connecting third-party services like GLS and financial platforms to a low-code system, Caspio.',
-            'I designed and maintained T-SQL databases, collaborated with stakeholders to scope projects and delivered tailored integration solutions that bridged hardware, internal software and external systems.',
-            'This was my first real taste of working directly with customers - understanding their struggles first, then building the solution. A combination I have not let go of since.'
+            'Built REST API integrations in Java Spring Boot on AWS, connecting third-party services to a low-code system. Designed and maintained T-SQL databases and delivered tailored integration solutions bridging hardware, software and external systems.',
+            'This was my first real taste of working directly with customers - understanding their struggles first, then building the solution. A combination I have not let go of since.',
           ],
           tags: [],
           umamiEvent: 'company-skancode',
@@ -184,9 +181,7 @@ export default defineComponent({
             { title: 'Website Developer', period: 'May 2021 – Jan 2022' },
           ],
           description: [
-            'I designed and built a custom WordPress site for a dance school. It featured a custom theme, tailored plugins, responsive design, contact forms and SEO setup.',
-            'I also provided ongoing maintenance and trained the administrators on managing the CMS themselves.',
-            'My first real taste of owning a project end to end',          
+            'Designed and built a custom WordPress site for a dance school - custom theme, plugins, responsive design and SEO, and trained the admins to manage the CMS themselves. My first real taste of owning a project end to end.',
           ],
           tags: [],
           umamiEvent: 'company-reinhardt-dans',

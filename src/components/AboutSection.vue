@@ -13,10 +13,10 @@
             <span class="text-mauve">I own them.</span>
           </h2>
           <p class="text-subtext0 leading-relaxed mb-4">
-            I am a Technical Solutions Engineer from Denmark with a Master of Science degree in Computer Science and Engineering from the Technical University of Denmark. But, the degree is not really the point. The point is that <span class="text-mauve font-medium">I am in the room for every part of an implementation</span>: the sales conversation, the IT alignment calls, the actual building, the testing, signing-off, and whatever comes through support after. <span class="text-mauve font-medium">I do not pass the torch. I carry it the whole way.</span>
+            I am a Technical Solutions Engineer from Denmark with an MSc in Computer Science and Engineering - but the degree is not really the point. <span class="text-mauve font-medium">The point is that I am in the room for every part of an implementation</span> - the sales conversation, the building, the testing, and whatever comes through support after. <span class="text-mauve font-medium">I do not pass the torch. I carry it the whole way.</span>
           </p>
           <p class="text-subtext0 leading-relaxed">
-            Yes, I am a software engineer and I can build entire applications, but <span class="text-mauve font-medium">my real expertise is translating the most complex technical setups into something every stakeholder can understand</span>. Sales representative, Head of HR, or the die-hard senior engineer, I can explain a setup in a way that makes sure everybody understands exactly what it means for them.
+            Yes, I am a software engineer and I can build entire applications, but <span class="text-mauve font-medium">my real expertise is translating complex technical setups into something every stakeholder can understand</span> - whether that is a Head of HR or a die-hard senior engineer.
           </p>
         </div>
 
@@ -35,7 +35,7 @@
               ↓ technical
             </span>
             <p class="text-subtext0 leading-relaxed">
-              It is possible to set up an OAuth 2.0 connection with your Microsoft Entra as the identity provider, in order to create an integration that automatically calls our public REST API endpoints for upserting users. The data will be fetched from the agreed fields and formatted as JSON for the payload, to ensure the endpoints accept it.
+              An OAuth 2.0 connection with Microsoft Entra as the identity provider, calling our REST API endpoints to upsert users with an agreed JSON payload.
             </p>
           </div>
 
@@ -44,7 +44,7 @@
               ↓ what it means
             </span>
             <p class="text-text leading-relaxed">
-              It is possible to set up a connection with your Microsoft Entra, and create an integration that automatically creates and updates your users on the platform. They will be created and updated with the data we agreed upon.
+              A connection with your Microsoft Entra that automatically creates and updates your users on the platform - with exactly the data we agreed on.
             </p>
           </div>
 

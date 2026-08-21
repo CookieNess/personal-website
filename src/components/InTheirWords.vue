@@ -41,8 +41,8 @@
           <div>
             <p class="label text-overlay1 mb-4">What I heard</p>
             <div class="flex flex-col gap-4">
-              <div class="bg-mauve/10 border border-mauve/20 rounded-tl-sm rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4">
-                <p class="text-mauve text-sm leading-relaxed italic">"I'm worried about losing control of who gets into our platform."</p>
+              <div class="bg-base border border-surface1 rounded-tl-sm rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4 max-w-s">
+                <p class="text-subtext1 text-sm leading-relaxed italic font-semibold">"I'm worried about losing control of who gets into our platform."</p>
               </div>
 
               <div class="flex items-center gap-3 py-1">
