@@ -60,10 +60,10 @@
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase text-overlay1 hover:text-mauve transition-colors"
           >
-          <Download class="w-4 h-4"/>
-          Download CV
-        </a>
-      </div>
+            <Download class="w-4 h-4"/>
+            Download CV
+          </a>
+        </div>
       </div>
 
 
