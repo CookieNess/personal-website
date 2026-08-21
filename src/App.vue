@@ -23,9 +23,9 @@
       ></div>
 
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p class="font-mono text-xs tracking-[0.2em] uppercase text-mauve mb-6">
+        <!-- <p class="font-mono text-xs tracking-[0.2em] uppercase text-mauve mb-6">
           Technical Solutions Engineer
-        </p>
+        </p> -->
 
         <h1 class="font-display font-extrabold text-text leading-none mb-6"
             style="font-size: clamp(3rem, 10vw, 6rem); letter-spacing: -0.03em;">
@@ -36,7 +36,7 @@
           Most people hand off a project.
         </p>
         <p class="text-mauve font-semibold mb-10" style="font-size: clamp(1.1rem, 2.5vw, 1.6rem);">
-          I don't.
+          I do not.
         </p>
 
         <div class="flex gap-4 justify-center flex-wrap">
@@ -53,12 +53,25 @@
             Connect
           </a>
         </div>
+        <div class="mt-4">
+          <a
+            href="/pdfs/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase text-overlay1 hover:text-mauve transition-colors"
+          >
+          <Download class="w-4 h-4"/>
+          Download CV
+        </a>
       </div>
+      </div>
+
 
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-overlay0">
         <span class="font-mono text-[0.6rem] tracking-[0.2em] uppercase">scroll</span>
         <div class="w-px h-10 bg-gradient-to-b from-overlay0 to-transparent animate-pulse"></div>
       </div>
+      
     </section>
 
     <AboutSection />
@@ -80,6 +93,7 @@ import InTheirWords from './components/InTheirWords.vue'
 import Connect from './components/Connect.vue'
 import HowIWork from './components/HowIWork.vue'
 import Projects from './components/Projects.vue'
+import { Download } from 'lucide-vue-next'
 
 export default defineComponent({
   components: {
@@ -90,6 +104,7 @@ export default defineComponent({
     Connect,
     HowIWork,
     Projects,
+    Download,
   },
 })
 </script>
